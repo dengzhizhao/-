@@ -1,0 +1,513 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: auto;
+        }
+        
+        body {
+            background-color: #f3F5f7;
+            height: 3000px;
+        }
+        
+        .gooab .w {
+            height: 3000px;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        /* 清除浮动 */
+        
+        .clearfix:before,
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .clearfix {
+            *zoom: 2;
+        }
+        
+        .header {
+            height: 42px;
+            /* background-color: pink; */
+            /* 注意此地会层叠W里面的margin */
+            margin: 30px auto;
+        }
+        
+        .logo {
+            float: left;
+            width: 198px;
+            height: 42px;
+            /* background-color: purple; */
+        }
+        
+        .nav {
+            /* float: left; */
+            margin-left: 60px;
+        }
+        
+        .nav ul li {
+            float: left;
+            margin: 0 15px;
+        }
+        
+        .nav ul li a {
+            display: block;
+            height: 42px;
+            padding: 0 10px;
+            line-height: 42px;
+            font-size: 18px;
+            color: #050505;
+        }
+        
+        .nav ul li a:hover {
+            border-bottom: 2px solid #00a4ff;
+            color: #00a4ff;
+        }
+        /* 搜索模块 */
+        
+        .search {
+            float: left;
+            width: 412px;
+            height: 42px;
+            /* background-color: skyblue; */
+            margin-left: 70px;
+        }
+        
+        .search input {
+            float: left;
+            width: 345px;
+            height: 40px;
+            border: 1px solid #00a4ff;
+            border-radius: 0;
+            color: #bfbfbf;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+        
+        .search button {
+            float: left;
+            width: 50px;
+            height: 42px;
+            /* background-color: blue; */
+            /* 按钮button默认有个边框需要我们手动去掉 */
+            border: 0;
+            background: url(images/logo_07_07.jpg);
+        }
+        
+        .user {
+            float: right;
+            line-height: 42px;
+            margin-right: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        /* banner区域 */
+        
+        .banner {
+            /* float: left; */
+            height: 412px;
+            background-color: #1c036c;
+        }
+        
+        .banner .w {
+            height: 412px;
+            background: url(images/03_02.jpg)no-repeat top center;
+        }
+        
+        .subnav {
+            float: left;
+            width: 190px;
+            height: 412px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .subnav ul li {
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px;
+        }
+        
+        .subnav ul li a {
+            font-size: 14px;
+            color: #fff;
+        }
+        
+        .subnav ul li a span {
+            float: right;
+        }
+        
+        .course {
+            float: right;
+            width: 230px;
+            height: 300px;
+            background-color: #fff;
+            /* 浮动的盒子不会有外边距合并的问题 */
+            margin-top: 50px;
+        }
+        
+        .course h2 {
+            height: 48px;
+            background-color: #9bceea;
+            text-align: center;
+            line-height: 48px;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        .bd {
+            padding: 0 20px;
+        }
+        
+        .bd ul li {
+            padding: 14px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .bd ul li h4 {
+            font-size: 16px;
+            color: #4e4e4e;
+        }
+        
+        .bd ul li p {
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+        
+        .bd .more {
+            display: block;
+            height: 38px;
+            border: 1px solid #00a4ff;
+            margin-top: 5px;
+            text-align: center;
+            line-height: 38px;
+            color: #00a4ff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        /* 精品模块推荐 */
+        
+        .goods {
+            height: 60px;
+            background-color: #fff;
+            margin-top: 10px;
+            box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+            /* 行高会继承，会继承给3个孩子 */
+            line-height: 60px;
+        }
+        
+        .goods h3 {
+            float: left;
+            margin-left: 30px;
+            font-size: 16px;
+            color: #00a4ff;
+        }
+        
+        .goods ul {
+            float: left;
+            margin-left: 30px;
+        }
+        
+        .goods ul li {
+            float: left;
+        }
+        
+        .goods ul li a {
+            padding: 0 30px;
+            font-size: 16px;
+            color: #050505;
+            border-left: 1px solid #ccc;
+        }
+        
+        .mod {
+            float: right;
+            margin-right: 30px;
+            font-size: 14px;
+            color: #00a4ff
+        }
+        
+        .box {
+            margin-top: 30px;
+        }
+        
+        .box-hd {
+            height: 45px;
+        }
+        
+        .box-hd h3 {
+            float: left;
+            font-size: 20px;
+            color: #494949;
+        }
+        
+        .box-hd a {
+            float: right;
+            font-size: 12px;
+            color: #a5a5a5;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+        /* 把li的父亲ul修改的足够宽一行能装开5个盒子就不会换行了 */
+        
+        .box-bd ul {
+            width: 1225px;
+        }
+        
+        .box-bd ul li {
+            float: left;
+            width: 228px;
+            height: 270px;
+            background-color: #fff;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .box-bd ul li img {
+            width: 100%;
+        }
+        
+        .box-bd ul li h4 {
+            margin: 20px 20px 20px 25px;
+            font-size: 14px;
+            color: #050505;
+            font-weight: 400;
+        }
+        
+        .box-bd .info {
+            margin: 0 20px 0 25px;
+            font-size: 12px;
+            color: #9999;
+        }
+        
+        .box-bd .info span {
+            color: #ff7c2b;
+        }
+        /* 编程入门 */
+        
+        .gooab {
+            height: 18px;
+            /* background-color: #fff; */
+            margin-top: 10px;
+            /* box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1); */
+            /* 行高会继承，会继承给3个孩子  */
+            /* line-height: 60px; */
+        }
+        
+        .gooab h3 {
+            float: left;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #00a4ff;
+        }
+        
+        .gooab ul {
+            float: left;
+            margin-left: 154px;
+        }
+        
+        .gooab ul li {
+            float: left;
+        }
+        
+        .gooab ul li a {
+            padding: 0 60px;
+            font-size: 16px;
+            color: #050505;
+            /* /* border-left: 1px solid  */
+        }
+        
+        .mad {
+            float: right;
+            margin-right: 30px;
+            font-size: 14px;
+            color: #00a4ff;
+        }
+        /* footer模块 */
+        /* .box2 {
+            margin-top: 5px;
+            height: 391px;
+            /* background-color: pink; */
+        /* }
+        
+        .box2 ul li {
+            width: 228px;
+            height: 170px;
+            /* background-color: royalblue; */
+        /* float: left;
+        }
+        
+        .box2 ul img {
+            width: 228px;
+        } */
+        /* .box2 .right {
+            width: 960px;
+            height: 391px;
+            /* background-color: salmon; */
+        /* float: left; */
+        /* 距离左边10px */
+        /* margin-left: 14px;
+        } */
+        /* .box2 .right .top {
+            width: 960px;
+            height: 80px; */
+        /* background-color: seagreen; */
+        /* } */
+        /* .box2 .right .top img {
+            width: 960px;
+            height: 80px;
+        } */
+        /*         
+        .box2 .right .bot {
+            width: 960px;
+            height: 291px;
+            margin-top: 20px; */
+        /* background-color: yellow; */
+        /* } */
+        /* .box2 .right .bot li {
+            width: 226px;
+            height: 291px;
+            margin-right: 15px;
+            background-color: #fff;
+            /* border: 1px solid #ff7c2b; */
+        /* }  */
+        /* .box2 .right .bot ul .last {
+            margin: 0;
+        } */
+        /* .box2 .right .bot li h3 {
+            color: black;
+            margin: 20px 20px 20px 25px;
+        } */
+        /* .box2 .right .bot li p span {
+            font-size: 16px;
+            color: coral;
+            font-weight: 900;
+            margin: 20px 20px 20px 25px;
+        }  */
+        /* 编程入门 */
+        
+        .box2 {
+            /* 加浮动后面的div不会居中 */
+            margin-top: 5px;
+            width: 1500px;
+            height: 500px;
+            /* background-color: pink; */
+        }
+        
+        .box2 ul li {
+            float: left;
+            margin-left: -10px;
+            width: 228px;
+            height: 500px;
+            background-color: #fff;
+        }
+        
+        .box2 .right {
+            float: left;
+            width: 960px;
+            height: 500px;
+            /* background-color: red; */
+            margin-left: 14px;
+        }
+        
+        .box2 .right .top {
+            width: 960px;
+            height: 80px;
+            background-color: royalblue;
+        }
+        
+        .box2 .right .bot {
+            margin-top: 20px;
+            width: 960px;
+            height: 400px;
+            /* background-color: sandybrown; */
+        }
+        
+        .box2 .right .bot li {
+            width: 229px;
+            height: 400px;
+            margin-left: 14px;
+        }
+        
+        .box2 .right .bot ul .last {
+            margin: 1px;
+        }
+        
+        .box2 .w ul li img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .box2 .right .top img {
+            width: 960px;
+            height: 80px;
+        }
+        
+        .box2 .bot ul li img {
+            width: 100%;
+        }
+        
+        .box2 .bot ul li h3 {
+            font-size: 14px;
+            /* font-weight: 700; */
+            margin: 100px 40px 35px 25px;
+        }
+        
+        .box2 .right .bot li p span {
+            color: sandybrown;
+            font-weight: 700;
+            margin: 30px 20px 20px 50px;
+        }
+        /* 编程入门 */
+        
+        .box3 {
+            height: 60px;
+            background-color: #fff;
+            margin-top: 10px;
+            box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+            /* 行高会继承，会继承给3个孩子 */
+            line-height: 60px;
+        }
+        
+        .box3 h3 {
+            float: left;
+            /* margin-left: 30px; */
+            font-size: 16px;
+            color: #00a4ff;
+        }
+        
+        .box3 ul {
+            float: left;
+            margin-left: 30px;
+        }
+        
+        .box3 ul li {
+            float: left;
+        }
+        
+        .box3 ul li a {
+            float: left;
+            padding: 0 60px;
+            font-size: 16px;
+            color: #050505;
+            /* border-left: 1px solid #ccc; */
+        }
+        
+        .mbd {
+            float: right;
+            margin-right: 30px;
+            font-size: 14px;
+            color: #00a4ff;
+        }
